@@ -1,0 +1,24 @@
+{
+  "name": "node-http-hello-headers-lab",
+  "version": "1.0.0",
+  "description": "Enhancing Hello World Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:learn-co-curriculum/node-http-hello-headers-lab.git"
+  },
+  "author": "Azat Mardan",
+  "license": "ISC",
+  "bugs": {
+    "url": "git@github.com:learn-co-curriculum/node-http-hello-headers-lab.git/issues"
+  },
+  "homepage": "git@github.com:learn-co-curriculum/node-http-hello-headers-lab.git/#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "2.4.5",
+    "supertest": "^1.1.0"
+  }
+}
