@@ -24,19 +24,21 @@ describe('server', function () {
 
     })
     setTimeout(function(){
-        done()
+      done()
     }, 400)
   })
 })
 
 describe('server', function () {
   it('must respond with Hello World', function(done){
-    supertest('http://localhost:3000').get('/')
-      .expect(200,'Hello World\n')
-      .expect('Content-Type', 'text/plain')
-      .expect('Content-Length', 200)
+    supertest('http://localhost:3000')
+      .get('/')
       .end(function(error, response){
-        console.log(response.res);
+        expect(response.res.text).to.equal('Hello World\n')
+        expect(response.res.statusCode).to.equal(200)
+        expect(response.res.headers['content-type']).to.equal('text/plain')
+        expect(response.res.headers['content-length']).to.equal('12')
+        expect(response.res.statusMessage).to.equal('ok')
         var killResult = child.kill()
         expect(killResult).to.be.true
         done()
@@ -44,3 +46,8 @@ describe('server', function () {
   })
 })
 
+after(function(){
+  if (typeof killResult == 'undefined') {
+    child.kill()
+  }
+})
