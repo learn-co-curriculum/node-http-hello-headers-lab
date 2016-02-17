@@ -18,7 +18,7 @@ In this lab, you'll use `writeHead()` to send back the proper response header.
 1. Output "Hello World\n" (`\n` is for the new line) - `body`
 1. Add Content-Type `text/plain` and Content-Lenght of `body.length` with `writeHead()`
 1. Write status 200 and message `ok` in the response header
-1. Start the server with `$ node server` and test with CURL `-v` or with Postman
+1. Start the server with `node server` and test with CURL `-v` or with Postman
 1. Run tests with `npm install && npm test`
 
 
