@@ -8,7 +8,7 @@
 
 ## Introduction
 
-The Internet is a collection of servers and clients. The way web works clients send requests and servers provide responses. You all know that. You some of you don't know is that responses can vary in type and other characteristics. Most of us don't know it because browsers (i.e., clients) do a great deal of interpreting the right way to handle each type of the response. The automatic interpreter is powerless when there are feasible cases for two (or more) types. Maybe you want to get a text which is HTML or maybe you want the HTML to be rendered in the browser as a web page:
+The Internet is a collection of servers and clients. Clients send requests and servers provide responses. You all know that. What some of you don't know is that responses can vary in type and other characteristics. Most of us don't know it because browsers (i.e., clients) do a great deal of interpreting the right way to handle each type of the response. The automatic interpreter is powerless when there are feasible cases for two (or more) types. Maybe you want to get a text which is HTML or maybe you want the HTML to be rendered in the browser as a web page:
 
 ```
 <html>
@@ -20,7 +20,7 @@ The Internet is a collection of servers and clients. The way web works clients s
 
 Headers help to determine the type of the content. They also contain other important information like authentication, body length, compression type, encoding, and many other things. All them help clients to process the response faster and better.
 
-In this lab, you'll use `writeHead()` to send back the proper response headers.
+In this lab, you'll use `writeHead()` to send back the proper response headers to the client.
 
 ## Instructions
 
@@ -43,4 +43,4 @@ In this lab, you'll use `writeHead()` to send back the proper response headers.
 1. [writeHead official documentation](https://nodejs.org/api/http.html#http_response_writehead_statuscode_statusmessage_headers)
 2. [HTTP - Setting Content-Type header video](https://www.youtube.com/watch?v=P6MHXU2Vu1s)
 3. [CURL for Windows](http://www.confusedbycode.com/curl)
-3. [Postman Chrome app](http://www.getpostman.com)
+3. [Postman Chrome app](http://www.getpostman.com)om)
