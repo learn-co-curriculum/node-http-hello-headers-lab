@@ -43,4 +43,4 @@ In this lab, you'll use `writeHead()` to send back the proper response headers t
 1. [writeHead official documentation](https://nodejs.org/api/http.html#http_response_writehead_statuscode_statusmessage_headers)
 2. [HTTP - Setting Content-Type header video](https://www.youtube.com/watch?v=P6MHXU2Vu1s)
 3. [CURL for Windows](http://www.confusedbycode.com/curl)
-3. [Postman Chrome app](http://www.getpostman.com)om)
+3. [Postman Chrome app](http://www.getpostman.com)
